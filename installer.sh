@@ -1,28 +1,32 @@
 #!/usr/bin/env bash
 
 # Hyprland dependencies
-bash ~/debian-hyprland/resources/01-dependencies
-bash ~/debian-hyprland/resources/02-waypackages
+bash ~/hyprland-debian/resources/01-dependencies
+bash ~/hyprland-debian/resources/02-waypackages
+
+# NixPackages
+
+bash ~/hyprland-debian/resources/03-nixpkgs
 
 # File Manager (thunar)
-bash ~/debian-hyprland/resources/03-filemanager
+bash ~/hyprland-debian/resources/04-filemanager
 
 # Install Hyprland
-bash ~/debian-hyprland/resources/04-hyprland
+bash ~/hyprland-debian/resources/05-hyprland
 
 # nwg-look
-bash ~/debian-hyprland/resources/05-nwg-look
+bash ~/hyprland-debian/resources/06-nwg-look
 
 # fonts
-bash ~/debian-hyprland/resources/06-fonts
+bash ~/hyprland-debian/resources/07-fonts
 
 # rofi wayland
-bash ~/debian-hyprland/resources/07-rofi-wayland
+bash ~/hyprland-debian/resources/08-rofi-wayland
 
 # SDDM
-bash ~/debian-hyprland/resources/08-login-manager
+bash ~/hyprland-debian/resources/09-login-manager
 
 
 sudo apt autoremove
 
-printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
+printf "\e[1;32mYou can now reboot! Yeeee Lets Gooo!!!.\e[0m\n"

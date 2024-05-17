@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+cd ~/Downloads
+
+git clone --recursive -b v0.39.1 "https://github.com/hyprwm/Hyprland"
+cd Hyprland
+make all
+sudo make install
+
+cd ..
+rm -rf Hyprland
+
+cd ~/hyprland-debian
+
+sudo mkdir /usr/share/wayland-sessions
+sudo cp ~/hyprland-debian/resources/hyprland.desktop /usr/share/wayland-sessions/
+
+
