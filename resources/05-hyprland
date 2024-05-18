@@ -13,6 +13,6 @@ rm -rf Hyprland
 cd ~/hyprland-debian
 
 sudo mkdir /usr/share/wayland-sessions
-sudo cp ~/hyprland-debian/resources/hyprland.desktop /usr/share/wayland-sessions/
+cp ~/hyprland-debian/resources/hyprland.desktop /usr/share/wayland-sessions/
 
 
